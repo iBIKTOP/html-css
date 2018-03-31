@@ -1,0 +1,36 @@
+#div1{
+	text-align: center;
+	margin-top: 100px;
+	height: 400px;
+	position: relative;
+}
+#div2{
+	left: 500px;
+	position: absolute;
+}
+img{
+	width: 500px;
+	border-radius: 260px;
+	border: 10px solid;
+	padding: 10px;
+	border-top-color: red;
+	border-bottom-color: blue;
+	border-left-color: gray;
+	border-right-color: white;
+}
+#div3{
+	position: absolute;
+	background-color: blue;
+	border: 2px solid white;
+	width: 200px;
+	height: 130px;
+	color: white;
+	font-size: 50px;
+	padding-top: 70px;
+	border-radius: 170px;
+	left: 900px;
+	top: 230px;
+	text-shadow: 2px 2px 2px black;
+	box-shadow: 2px 2px 2px black;
+
+}
