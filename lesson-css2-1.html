@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html>
+<head>
+ <title>CSS селекторы и не только.</title>
+ <meta charset="utf-8" />
+ <style>
+  div:first-child{
+   width: 300px; 
+   border: 1px solid grey;
+   border-radius: 10px;
+   text-align: center;
+   margin: 0;
+  }
+  div{
+   width: 250px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: justify; 
+   font-size: 12px;
+   font-style: italic;
+  }
+  h1{
+   font-size: 18px;
+  }
+  img{
+   width: 50px;
+   border:1px solid grey;
+   border-radius: 5px;
+   padding: 5px;
+  }
+  img:first-child{
+   width: 250px;
+   border: none;
+   margin-top: 10px;
+   
+  }
+  div>span{
+  	line-height: 50px;
+  	margin-left: 35px;
+   	font-style: normal;
+   	font-weight: bold;
+   	font-size: 16px;
+  }
+  div div span:first-child{
+   text-decoration: line-through; 
+   
+  }
+  div div span:last-child{
+   background-color: orange; 
+  }
+  button{
+  	color: white;
+  	font-size: 15px;
+  	width: 150px;
+  	line-height: 30px;
+  	background-color: green;
+  	margin-bottom: 10px;
+  }
+  
+
+ </style>
+</head>
+<body>
+
+ <div>
+  <img src="http://files.courses.dp.ua/web/04/pic_big.jpg">
+  <img src="http://files.courses.dp.ua/web/04/pic_1.jpg">
+  <img src="http://files.courses.dp.ua/web/04/pic_2.jpg">
+  <img src="http://files.courses.dp.ua/web/04/pic_3.jpg">
+  <img src="http://files.courses.dp.ua/web/04/pic_4.jpg">
+  <h1>Кухонный комбайн KX567-T</h1>
+  <div>Этот кухонный комбайн KX567-T оснащен мощным мотором с 2 скоростями и импульсным режимом, что обеспечивает мощность и точное управление для приготовления любых блюд.</div>
+  <div>
+   <span>10000 грн</span>
+   <span>9999 грн.</span>
+  </div>
+  <button>Купить сейчас!</button>
+ </div> 
+</body>
+</html>
