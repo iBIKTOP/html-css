@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Задание по CSS селекторам.</title>
+	<meta charset="utf-8" />
+	<style>
+	/* Начало того места где можно писать код. */	
+      h1{
+        color: green;
+      }
+      div span:first-child{
+        color: red;
+      }
+      /*<small name="my_name">ОРАНЖЕВЫЙ</small>*/
+      small[name="my_name"]{
+        color: orange;        
+      }
+      div span:last-child{
+        color: green;
+      }
+      a[href="http://google.com"]{
+        color: green;
+      }
+      a[title]{
+        color: red;
+      }
+      p[class="my_class"] > b{
+        color: purple;
+      }
+      .my_class :nth-child(2){
+        color: blue;
+      }
+      ul li:nth-child(even){
+        background-color : yellow;
+      }
+      ul li:nth-child(odd){
+        color: red;
+      }
+      ul li:last-child{
+        color : purple;
+      }
+      ol li:nth-child(odd){
+        color: blue;
+      }
+      ol li:nth-child(even){
+        color: green;
+      }
+      ol li:nth-child(4){
+        background-color : grey;
+      }
+	/* Конец того места где можно писать код. */
+	</style>
+</head>
+<body>
+	<h1>Этот заголовок должен быть зелёный.</h1>
+	
+	<div>Это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст<span> КРАСНЫЙ </span>это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст <small name="my_name">ОРАНЖЕВЫЙ</small> это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это текст это <span> ЗЕЛЁНЫЙ </span>текст</div>
+	
+	<a href="">Обычная (цвет по умолчанию)</a>
+	<a href="http://google.com">ЗЕЛЕНАЯ</a>
+	<a href="http://google.com" title="Это ссылка на гугль">КРАСНАЯ</a>
+	
+	<p class="my_class"><b>ФИОЛЕТОВЫЙ</b>, <span>ГОЛУБОЙ</span>, <span>ЧЕРНЫЙ</span></p>
+	
+	<div>
+		<ul>
+			<li>Красный</li>
+			<li>Фон желтый</li>
+			<li>Красный</li>
+			<li>Фон желтый</li>
+			<li>Красный</li>
+			<li>Фон желтый</li>
+			<li>Фиолетовый</li>
+		</ul>
+	</div>
+	<div> Это текст </div>
+	<div>
+		<ol>
+			<li>Синий</li>
+			<li>Зелёный</li>
+			<li>Синий</li>
+			<li>Зелёный, Фон серый</li>
+			<li>Синий</li>
+			<li>Зелёный</li>
+			<li>Синий</li>
+			<li>Зелёный</li>
+		</ol>
+	</div>	
+</body>
+</html>
