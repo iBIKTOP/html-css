@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MARVEL</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{ 
+			margin: 0 auto;
+			background: red; 
+			width: 600px;
+			height: 300px;
+		}
+		p{ 
+			margin: 0px; 
+			width: 600px;
+			height: 300px;
+		}
+
+		#clip{
+		  /*		  Бекграунд добавлять первым		  */  
+		  background: url(https://static0.srcdn.com/wp-content/uploads/2018/02/Marvel-Heroes-Spider-Man-Avengers-Defenders-X-Men.jpg);
+		  background-size: cover;
+		  
+		  -webkit-text-fill-color: transparent; /*объяснение тут: http://xiper.net/manuals/css-extensions/webkit/properties/webkit-text-fill-color* или тут https://css-tricks.com/how-to-do-knockout-text/*/
+		  -webkit-background-clip: text;
+		  
+		  font-family: Tahoma;
+		  line-height: 300px;	
+		  font-size: 140px;
+		  font-weight: bold;
+		  text-align: center;
+		 
+		}
+	</style>
+</head>
+<body>
+	<div><p id="clip">MARVEL</p></div>
+</body>
+</html>
