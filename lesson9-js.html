@@ -16,20 +16,17 @@
 		var i=1;
 		function next(){
 			i+=1;
-			if(i>8){
-				i=1;
-			}
+			if(i>8)	i=1;
 			photo.src="http://files.courses.dp.ua/web/07/" + i + ".jpg";
 			counter_label.innerHTML="#"+i;
 		}
 		function prev(){
 			i-=1;
-			if(i<1){
-				i=8;
-			}
+			if(i<1)	i=8;
 			photo.src="http://files.courses.dp.ua/web/07/" + i + ".jpg";
 			counter_label.innerHTML="#"+i;
 		}
+		setInterval(next, 3000);
 	</script>
 </head>
 <body>
