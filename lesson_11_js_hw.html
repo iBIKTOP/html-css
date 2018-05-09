@@ -1,0 +1,21 @@
+<script>
+	var winter_temps = [];
+	
+	for(var i = 0; i < 10; i++){ 
+		winter_temps.push( Math.floor(Math.random() * 100 - 50) ); 
+	};
+	
+	console.log(winter_temps);
+	
+	//После этой строки вы можете писать свой код//
+	var freeze = 0;
+	
+	for (var b = 0; b < winter_temps.length-1; b++){
+		if (winter_temps[b] >= 0 && winter_temps[b+1] < 0){ 
+			freeze++;
+		}
+	}
+	console.log(freeze);
+	
+		
+</script>

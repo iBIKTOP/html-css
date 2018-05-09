@@ -5,16 +5,18 @@
 	<link rel="stylesheet" type="text/css" href="">
 	<meta charset="utf-8">
 	<script type="text/javascript">
-		
-		var w = parseInt(prompt("Введите свой вес (м)"));
-		var h = parseFloat(prompt("Введите свой рост (кг)"));
-		var a = w/(h*h);
-		alert("Индекс = " + a); /*можно использовать h**2*/
-		console.log(a);
-
+		var w = parseInt(prompt("Введите свой вес (кг):"));
+		var h = (parseFloat(prompt("Введите свой рост (см):")))/100;
+		var a = +(w/(h**2)).toFixed(2);//обрезаем все что после второй цыфры после точки
+		if(a<16) alert('Ваш ИМТ = ' + a + ': "Выраженный дефицит массы"');
+		if(a>=16 && a<=18.49) alert('Ваш ИМТ = ' + a + ': "Недостаточная масса тела"');
+		if(a>=18.5 && a<=24.99) alert('Ваш ИМТ = ' + a + ': "Норма"');
+		if(a>=25 && a<=29.99) alert('Ваш ИМТ = ' + a + ': "Предожирение"');
+		if(a>=30 && a<=34.99) alert('Ваш ИМТ = ' + a + ': "Ожирение первой степени"');
+		if(a>=35 && a<=39.99) alert('Ваш ИМТ = ' + a + ': "Ожирение второй степени"');
+		if(a>40) alert('Ваш ИМТ = ' + a + ': "Ожирение третьей степени"');
 	</script>
 </head>
 <body>
-
 </body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lesson_11_js</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<meta charset="utf-8">
+	<!-- <script type="text/javascript"> -->
+		<!-- // var mas = [2000, 3000, 5000, 8000, 10000];
+		// var sum = 0;
+		// for(var i=0; i<mas.length; i++){
+		// 	if(mas[i]<3700){
+		// 		sum = sum + (3700 - mas[i]);
+		// 		console.log(sum);
+		// 	}
+		// }
+		// alert(sum); -->
+		<script>
+
+			//Массив хранит курс доллара по дням за месяц.
+			var usd =  [26.4, 24.54, 26.08, 24.06, 25.27, 25.24, 24.61, 26.81, 24.12, 25.8, 25.5, 24.59, 26.67, 26.74, 25.79, 24.28, 26.12, 26.58, 24.27, 24.36, 24.97, 25.51, 25.23, 26.33, 26.7, 24.4, 25.25, 26.98, 25.51, 24.49];
+			var up=0;
+			var down=0;
+			for(var i=0; i<usd.length-1; i++){
+				if(usd[i+1]>usd[i]){
+					up++;
+					// console.log(up);
+				}
+				if(usd[i+1]<usd[i]){
+					down++;
+					// console.log(down);
+				}
+			}
+			console.log(up, down);
+
+
+
+			// var usd =  [26.4, 24.54, 26.08, 24.06, 25.27, 25.24, 24.61, 26.81, 24.12, 25.8, 25.5, 24.59, 26.67, 26.74, 25.79, 24.28, 26.12, 26.58, 24.27, 24.36, 24.97, 25.51, 25.23, 26.33, 26.7, 24.4, 25.25, 26.98, 25.51, 24.49]; 
+			// var uah = [];
+			// for(var i=0; i<usd.length;i++){
+			// 	// uah[i]=1/usd[i];
+			// 	var kurs = 1/usd[i];
+			// 	uah.push(kurs.toFixed(3));
+			// }
+			// console.log(uah);
+
+
+			// //Дальше можно писать код
+			// var max = usd[0];
+			// var date = 0;
+			// for(var i=1; i<usd.length;i++){
+			// 	if(max<usd[i]){
+			// 		max=usd[i];
+			// 		date=i+1;
+			// 	}
+			// }
+			// alert("Маскимальный $ = " + max + " : " + date + " числа");
+			
+		</script>
+
+	<!-- </script> -->
+</head>
+<body>
+</body>
+</html>
