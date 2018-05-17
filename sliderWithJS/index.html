@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SliderWithJS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script type="text/javascript">
+
+		function next(){
+            var arrRadio = document.querySelectorAll("#slider>input");
+			for(var i=0;i<arrRadio.length;i++) {
+			    if (arrRadio[i].checked && i == arrRadio.length-1){
+                    arrRadio[0].checked = "checked";
+                    break;
+				}
+                if (arrRadio[i].checked && i < arrRadio.length) {
+                    i++;
+                    arrRadio[i].checked = "checked";
+                    break;
+                }
+            }
+		}
+		function prev(){
+            var arrRadio = document.querySelectorAll("#slider>input");
+            for(var i=0;i<arrRadio.length;i++) {
+                if (arrRadio[0].checked){
+                    arrRadio[arrRadio.length-1].checked = "checked";
+                    break;
+                }
+                if (arrRadio[i].checked && i < arrRadio.length+1) {
+                    i--;
+                    arrRadio[i].checked = "checked";
+                    break;
+                }
+            }
+		}
+		setInterval(next,3000);
+	</script>
+</head>
+<body>
+	<div id="all" class="row m-0 justify-content-center align-items-center">
+		
+		
+		
+		<div class="col-1"><img id="prev" onclick="prev()" src="img/prev.jpg"></div>
+		<div id="slider" class="col-6 p-0 text-center">
+			<input type="radio" name="radio" id="switch1">
+			<input type="radio" name="radio" id="switch2">
+			<input type="radio" name="radio" id="switch3">
+			<input type="radio" name="radio" id="switch4"> 
+			<div id="overflow">
+				<div id="image">
+					<article><img src="img/1111.jpg"></article>
+					<article><img src="img/2222.jpg"></article>
+					<article><img src="img/3333.jpg"></article>
+					<article><img src="img/4444.jpg"></article>
+				</div>
+			</div>
+		</div>
+		<div class="col-1"><img id="next" onclick="next()" src="img/next.jpg"></div>
+		<label for="switch1" class="labelForRadio"></label>
+		<label for="switch2" class="labelForRadio"></label>
+		<label for="switch3" class="labelForRadio"></label>
+		<label for="switch4" class="labelForRadio"></label>
+
+	</div>
+</body>
+</html>

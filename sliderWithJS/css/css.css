@@ -1,0 +1,57 @@
+#slider{
+	width: 100%;
+	box-shadow: 0px 0px 10px #000;
+}
+#overflow{
+	width: 100%;
+	overflow: hidden;
+}
+#image{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 400%;
+	transition: 1s ease-in-out;
+}
+article{
+	width: 100%;
+	display: inline-block;
+}
+article img{
+	width: 100%;
+}
+#prev, #next{
+	width: 100%;
+}
+#prev:hover, #next:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+#prev:active, #next:active{
+	opacity: 0.8;
+}
+#radio{
+	border: 1px solid red;
+	text-align: center;
+}
+
+#switch1:checked ~ #overflow #image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ #overflow #image{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #overflow #image{
+	margin-left: -200%;
+}
+
+#switch4:checked ~ #overflow #image{
+	margin-left: -300%;
+}
+.labelForRadio{
+	width: 50px;
+	height: 10px;
+	background-color: black;
+}

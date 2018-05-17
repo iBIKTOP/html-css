@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        /*button {*/
+            /*transition: none !important;*/
+        /*}*/
+
+        li:nth-child(odd) {
+            background-color: #f7f7f7;
+        }
+
+        .container{
+            margin-bottom: 70px;
+            margin-top: 40px;
+        }
+        .act{
+            animation: remove .5s linear 0s 1 forwards;
+            /*animation: remove .5s linear forwards;*/
+        }
+        .no_act{
+            animation: no_remove .5s linear 0s 1 forwards;
+            /*animation: no_remove .5s linear forwards;*/
+        }
+        @keyframes remove{
+            0% {opacity: 1;
+                max-height: 1000px;}
+            99.9% {opacity: 0;
+                max-height: 0;
+                padding: 0;}
+            100% {opacity: 0;
+                max-height: 0;
+                padding: 0;
+                animation: poof 0.1s linear 0s 1;}
+        }
+        @keyframes no_remove{
+            0%{opacity: 0;
+                max-height: 0;
+                padding: 0;
+                animation: no_poof 0.1s linear 0s 1;}
+            0.1%{opacity: 0;
+                max-height: 0;
+                padding: 0;
+            }
+            100%{opacity: 1;
+                max-height: 1000px;
+                padding: 12px;}
+        }
+        @keyframes poof{
+            from {display: flex !important;}
+            to {display: none !important;}
+        }
+        @keyframes no_poof{
+            from {display: none !important;}
+            to {display: flex !important;}
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Collapse Demo</h1>
+
+    <ul class="list-group">
+        <li class="list-group-item justify-content-between">
+            <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong>
+            <button  type="button" class="btn btn-secondary">
+                <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+            </button>
+        </li>
+        <li class="list-group-item">Nulla rhoncus ante nulla, quis iaculis diam tincidunt vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus pretium dolor sit amet enim molestie, eu ultricies nulla imperdiet. Curabitur eget massa vel elit mollis vestibulum. Suspendisse scelerisque porttitor mauris, a feugiat augue porta id. Vestibulum ut massa orci. Pellentesque non mi nec sem iaculis consectetur. Phasellus pretium dolor sit amet enim molestie, eu ultricies nulla imperdiet. Curabitur eget massa vel elit mollis vestibulum. Suspendisse scelerisque porttitor mauris, a feugiat augue porta id. Vestibulum ut massa orci. Pellentesque non mi nec sem iaculis consectetur. Curabitur quis tristique nunc. Sed sollicitudin diam id nisi molestie tristique. Sed a lacus non nunc finibus vestibulum ac at justo. Duis luctus congue luctus.</li>
+
+        <li class="list-group-item justify-content-between">
+            <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong>
+            <button  type="button" class="btn btn-secondary">
+                <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+            </button>
+        </li>
+        <li class="list-group-item">Nulla rhoncus ante nulla, quis iaculis diam tincidunt vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus pretium dolor sit amet enim molestie, eu ultricies nulla imperdiet. Curabitur eget massa vel elit mollis vestibulum. Suspendisse scelerisque porttitor mauris, a feugiat augue porta id. Vestibulum ut massa orci. Pellentesque non mi nec sem iaculis consectetur. Phasellus pretium dolor sit amet enim molestie, eu ultricies nulla imperdiet. Curabitur eget massa vel elit mollis vestibulum. Suspendisse scelerisque porttitor mauris, a feugiat augue porta id. Vestibulum ut massa orci. Pellentesque non mi nec sem iaculis consectetur. Curabitur quis tristique nunc. Sed sollicitudin diam id nisi molestie tristique. Sed a lacus non nunc finibus vestibulum ac at justo. Duis luctus congue luctus.</li>
+
+        <li class="list-group-item justify-content-between">
+            <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong>
+            <button  type="button" class="btn btn-secondary">
+                <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+            </button>
+        </li>
+        <li class="list-group-item">Nulla rhoncus ante nulla, quis iaculis diam tincidunt vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus pretium dolor sit amet enim molestie, eu ultricies nulla imperdiet. Curabitur eget massa vel elit mollis vestibulum. Suspendisse scelerisque porttitor mauris, a feugiat augue porta id. Vestibulum ut massa orci. Pellentesque non mi nec sem iaculis consectetur. Phasellus pretium dolor sit amet enim molestie, eu ultricies nulla imperdiet. Curabitur eget massa vel elit mollis vestibulum. Suspendisse scelerisque porttitor mauris, a feugiat augue porta id. Vestibulum ut massa orci. Pellentesque non mi nec sem iaculis consectetur. Curabitur quis tristique nunc. Sed sollicitudin diam id nisi molestie tristique. Sed a lacus non nunc finibus vestibulum ac at justo. Duis luctus congue luctus.</li>
+
+        <li class="list-group-item justify-content-between">
+            <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong>
+            <button  type="button" class="btn btn-secondary">
+                <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+            </button>
+        </li>
+        <li class="list-group-item">Nulla rhoncus ante nulla, quis iaculis diam tincidunt vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus pretium dolor sit amet enim molestie, eu ultricies nulla imperdiet. Curabitur eget massa vel elit mollis vestibulum. Suspendisse scelerisque porttitor mauris, a feugiat augue porta id. Vestibulum ut massa orci. Pellentesque non mi nec sem iaculis consectetur. Phasellus pretium dolor sit amet enim molestie, eu ultricies nulla imperdiet. Curabitur eget massa vel elit mollis vestibulum. Suspendisse scelerisque porttitor mauris, a feugiat augue porta id. Vestibulum ut massa orci. Pellentesque non mi nec sem iaculis consectetur. Curabitur quis tristique nunc. Sed sollicitudin diam id nisi molestie tristique. Sed a lacus non nunc finibus vestibulum ac at justo. Duis luctus congue luctus.</li>
+
+        <li class="list-group-item justify-content-between">
+            <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong>
+            <button  type="button" class="btn btn-secondary">
+                <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+            </button>
+        </li>
+        <li class="list-group-item">Nulla rhoncus ante nulla, quis iaculis diam tincidunt vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus pretium dolor sit amet enim molestie, eu ultricies nulla imperdiet. Curabitur eget massa vel elit mollis vestibulum. Suspendisse scelerisque porttitor mauris, a feugiat augue porta id. Vestibulum ut massa orci. Pellentesque non mi nec sem iaculis consectetur. Phasellus pretium dolor sit amet enim molestie, eu ultricies nulla imperdiet. Curabitur eget massa vel elit mollis vestibulum. Suspendisse scelerisque porttitor mauris, a feugiat augue porta id. Vestibulum ut massa orci. Pellentesque non mi nec sem iaculis consectetur. Curabitur quis tristique nunc. Sed sollicitudin diam id nisi molestie tristique. Sed a lacus non nunc finibus vestibulum ac at justo. Duis luctus congue luctus.</li>
+
+    </ul>
+
+</div>
+<script>
+    var btn = document.querySelectorAll(".btn");
+    for (var i=0;i<btn.length;i++) {
+        btn[i].onclick = function () {
+//            if (this.parentNode.nextElementSibling.style.display != "none") {
+//                this.parentNode.nextElementSibling.style.display = "none";
+//                this.style.transform = "rotate(180deg)";
+//            }
+//            else {
+//                this.parentNode.nextElementSibling.style.display = "block";
+//                this.style.transform = "rotate(0deg)";
+//            }
+            //Вариант №1
+//            if (this.parentNode.nextElementSibling.style.opacity != "0") {
+//                this.parentNode.nextElementSibling.style.transition = "max-height 1s linear, opacity 1s";
+//                this.parentNode.nextElementSibling.style.maxHeight = "0";
+//                this.parentNode.nextElementSibling.style.opacity = "0";
+//                this.parentNode.nextElementSibling.style.overflow = "hidden";
+//                this.parentNode.nextElementSibling.style.padding = "0";
+//                this.style.transform = "rotate(180deg)";
+//            }
+//            else {
+//                this.parentNode.nextElementSibling.style.transition = "max-height 1s linear, opacity 1s 0s";
+//                this.parentNode.nextElementSibling.style.maxHeight = "500px";
+//                this.parentNode.nextElementSibling.style.opacity = "1";
+//                this.parentNode.nextElementSibling.style.overflow = "visible";
+//                this.parentNode.nextElementSibling.style.padding = "12";
+//                this.style.transform = "rotate(0deg)";
+//            }
+            //Вариант №2
+            if (this.style.transform != "rotate(180deg)") {
+                this.parentNode.nextElementSibling.classList.add("act");
+                this.parentNode.nextElementSibling.classList.remove("no_act");
+                this.style.transform = "rotate(180deg)";
+            }else{
+                this.parentNode.nextElementSibling.classList.remove("act");
+                this.parentNode.nextElementSibling.classList.add("no_act");
+                this.style.transform = "rotate(0deg)";
+            }
+        }
+    }
+</script>
+</body>
+</html>

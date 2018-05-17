@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lesson_14_jQwuery</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+//        $(function () {
+//            $("p").on("click", function () {
+//                $(this).css("background-color","red").css('color',"blue");
+//            });
+//        });
+        $(function () {
+            $("p").on("click", function () {
+                $(this).slideUp(3000, function () {
+                    $(this).slideDown(3000);
+                })
+            });
+        });
+
+    </script>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare lobortis fermentum. <span>In tempor consequat ex</span>, id efficitur odio ornare quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ornare sem a sollicitudin dignissim. Pellentesque ultricies non sem et vestibulum. Nulla nulla justo, vehicula at ex eu, suscipit ultrices ex. Suspendisse ultrices eros dui, ac maximus ligula pellentesque sit amet. Vestibulum ornare pretium enim, hendrerit feugiat lacus. Proin et arcu vel nisl gravida imperdiet. Nullam nec magna mi.</p>
+
+<p>Duis vitae vehicula nisl, eu fringilla eros. Ut blandit lobortis neque, ut tristique risus porttitor in. Vivamus ultrices neque mi, sit amet tristique lectus porttitor et. Phasellus a pharetra ante. Aliquam convallis mauris nisi, ut consectetur quam volutpat ut. Pellentesque in ultricies massa, vitae blandit arcu. <a href="http://www.google.com">Vivamus dignissim condimentum</a> sodales. Aliquam erat volutpat. Ut hendrerit metus facilisis varius mollis. Integer lacinia, augue id vestibulum gravida, sapien turpis rutrum tellus, et pharetra metus elit in nisi.</p>
+
+<div>Class aptent taciti sociosqu ad litora torquent per conubia nostra, <span>per inceptos himenaeos</span>. Phasellus malesuada ac velit at condimentum. Ut est velit</div>
+
+
+<p>Donec gravida pharetra arcu ac iaculis. Morbi justo ex, imperdiet at erat ac, semper tincidunt nisi. Pellentesque libero massa, sodales vitae massa sit amet, rutrum laoreet ligula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus a congue sem. Donec gravida, dolor feugiat gravida lacinia, magna nunc dapibus magna, vitae ultricies mi nisi sit amet odio. Ut mollis lorem tortor, sit amet venenatis turpis interdum suscipit.</p>
+
+<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quam diam, <span>faucibus in lacus ac, convallis egestas augue. Aenean nec lacinia ligula.</span> Mauris non sollicitudin nunc. Morbi vel neque eros. Praesent ac ullamcorper tellus. Praesent metus ex, aliquam ullamcorper consequat vitae, convallis quis leo. Vivamus in vehicula lectus. In congue facilisis enim quis suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a commodo libero. In vitae nulla id sapien vulputate auctor condimentum a tellus. Nulla laoreet massa commodo, commodo sem eu, interdum nisl. Vivamus accumsan libero vitae scelerisque finibus. Nulla at fringilla purus, et sodales neque.</p>
+
+<p>Sed sit amet sem luctus, tempus nisi eu, feugiat augue. Cras mollis congue dui vitae egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus malesuada ac velit at condimentum. Ut est velit, vestibulum vel fermentum ut, bibendum eget dui. Nam quis viverra nulla. Nullam et sem pretium, malesuada ligula id, pellentesque enim. Fusce ligula ligula, commodo sed lobortis non, malesuada quis orci. Suspendisse eu quam eget massa convallis dictum in facilisis mi.</p>
+</body>
+</html>
+

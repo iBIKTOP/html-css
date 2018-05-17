@@ -1,0 +1,151 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+	<!--<title>Lesson_12_JS</title>-->
+	<!--<meta charset="utf-8">-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<script type="text/javascript">-->
+	<!---->
+	<!--// function test(){-->
+	<!--// 	alert("Hello!");-->
+	<!--// }-->
+	<!--// test();-->
+
+<!--//	function sum(a,b){-->
+<!--//		console.log("A:", a);-->
+<!--//		console.log("B:", b);-->
+<!--//		console.log("SUM:", a + b);-->
+<!--//		return a+b;-->
+	<!--}-->
+<!--//	alert(sum(5,7));-->
+
+<!--//	var test = sum;-->
+<!--//	console.log(test(5,5));-->
+<!--//-->
+<!--//	setTimeout(test(5,5), 3000);-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style>
+		.tag {
+			margin-left: 5px;
+			margin-right: 5px;
+			font-size: 12pt;
+		}
+		li {
+			font-size: 16pt;
+		}
+		button.btn {
+			font-size: 22pt;
+			margin: 30px;
+		}
+		h1 > .tag  {
+			vertical-align: middle !important;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-md-center">
+			<h1 class="display-1">Смартфоны++ <i class="tag tag-pill tag-danger">Есть скидки!</i></h1>
+			<button onclick="action()" class="btn btn-success btn-lg">
+				<i class="fa fa-percent" aria-hidden="true"></i>
+				Показать скидки!
+			</button>
+		</div>
+
+		<script>
+			function action() {
+			    //заносим в переменную массив из тегов
+                var tags = document.querySelectorAll("li>span");
+				var sum=0;
+				//перебераем массив для определения всей суммы
+                for(var i=0;i<tags.length;i++) {
+                    var price = tags[i].innerHTML;
+                    price = parseInt(price);
+                    sum+=price;
+                }
+                //определяем среднюю сумму и округляем до ближайшего целого числа
+                var limit=Math.round(sum/tags.length);
+                console.log(limit);
+				//перебераем массив для изменения цен и фона
+				for(var i=0;i<tags.length;i++) {
+                    var price = parseInt(tags[i].innerHTML);
+                    if (price>limit) {
+                        price = Math.round(price * 0.8 * 26);//переводим в грн где 1$=26грн.
+                        tags[i].innerHTML = price + "грн";
+                        tags[i].classList.remove("tag-primary");
+                        tags[i].classList.add("tag-danger");
+                    }
+                    if (price<=limit) {
+                        price = Math.round(price * 26);//переводим в грн где 1$=26грн.
+                        tags[i].innerHTML = price + "грн";
+                    }
+                }
+                //ищем кнопку для установки disabled
+                //document.querySelector("button").classList.add("disabled");
+				document.querySelector("button").disabled = "disabled";
+			}
+		</script>
+
+		<div class="col-md-9 offset-md-1">
+			<ul>
+				<li class="list-group-item">
+					iPhone 8
+					<span class="tag tag-primary tag-pill pull-xs-right">899 $</span>
+				</li>
+				<li class="list-group-item">
+					iPhone 7
+					<span class="tag tag-primary tag-pill pull-xs-right">799 $</span>
+				</li>
+				<li class="list-group-item">
+					Apple iPhone 6
+					<span class="tag tag-primary tag-pill pull-xs-right">199 $</span>
+				</li>
+				<li class="list-group-item">
+					Samsung Galaxy S9
+					<span class="tag tag-primary tag-pill pull-xs-right">650 $</span>
+				</li>
+				<li class="list-group-item">
+					Nokia 3310
+					<span class="tag tag-primary tag-pill pull-xs-right">99 $</span>
+				</li>
+				<li class="list-group-item">
+					HTC Two M3
+					<span class="tag tag-primary tag-pill pull-xs-right">433 $</span>
+				</li>
+				<li class="list-group-item">
+					Lenovo H6000
+					<span class="tag tag-primary tag-pill pull-xs-right">250 $</span>
+				</li>
+				<li class="list-group-item">
+					Microsoft Lumia 950
+					<span class="tag tag-primary tag-pill pull-xs-right">195 $</span>
+				</li>
+				<li class="list-group-item">
+					Sony Ericsson  K750 Gold
+					<span class="tag tag-primary tag-pill pull-xs-right">999 $</span>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>

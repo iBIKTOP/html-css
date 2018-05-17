@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson_13_JS</title>
+</head>
+<body>
+    <!--<h1 >Hello</h1>-->
+    <!--<h1 >Hello</h1>-->
+    <!--<h1 >Hello</h1>-->
+    <script>
+
+        var a = " Hello Ivan";
+        console.log(a.length);
+        console.log(a.toUpperCase());
+
+        var user = {
+            name : "Ivan",
+            age : 23,
+            sity : "Dnipro",
+            say : function () {
+                console.log("name: " + user.name)
+            }
+        };
+
+//        asd.innerHTML = "Test";
+//        asd.style.color = "red";
+//        asd.style.backgroundColor = "yellow";
+//        asd.style.border = "1px solid blue";
+
+//        var tags = document.querySelectorAll("h1");
+//        for(var i=0; i<tags.length;i++){
+//            tags[i].onclick = function () {
+//                this.style.color = "red";
+//            }
+//            tags[i].ondblclick = function () {
+//                this.style.color = "black";
+//            }
+//        }
+
+        window.onload = function () {
+            asd.style.color = "red";
+        }
+    </script>
+    <h1 id="asd">Hello</h1>
+</body>
+</html>
