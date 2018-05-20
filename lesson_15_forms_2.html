@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <h1>Hello, Forms!</h1>
+
+    <form action="http://files.courses.dp.ua/backend/">
+
+        <div class="form-group">
+            <label class="col-form-label" for="user_name">Имя</label>
+            <input type="text" class="form-control" id="user_name" name="user_name" required pattern="^[A-Za-zА-Яа-я]{2,20}$" title="Например: Иван">
+            <!--pattern проверка на маску и required проверка на НЕпустоту и title это подсказка-->
+        </div>
+        <div class="form-group">
+            <label class="col-form-label" for="user_phone">Телефон</label>
+            <input type="text" class="form-control" id="user_phone" name="user_phone" required pattern="^\+380[0-9]{9}$" title="Например: +380501112233">
+        </div>
+        <div class="form-group">
+            <label class="col-form-label" for="user_passport">№ паспорта</label>
+            <input type="text" class="form-control" id="user_passport" name="user_passport" required pattern="^([А-Я]{2}[0-9]{6}|[0-9]{9})$" title="Например: АН123456 или 123456789">
+        </div>
+
+        <button type="submit" class="btn btn-success">Отправить данные</button>
+
+    </form>
+
+
+</div>
+</body>
+</html>

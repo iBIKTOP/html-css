@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script>
+//        window.onload = function () {
+//            document.getElementsByTagName("p")[0].innerHTML = "Выборка по имени тега";
+//            document.getElementsByName("input_background")[0].style.background = "yellow";
+//            document.getElementsByClassName("bold_paragraph")[0].style.fontWeight = "bold";
+//            document.getElementById("red_paragraph").style.color = "red";
+//        }
+        $(function () {
+           $("p").eq(0).text("Выборка по имени тега");
+           $('[name = "input_background"]').eq(0).css("background","yellow");
+           $(".bold_paragraph").eq(0).css("font-weight","bold");
+           $("#red_paragraph").eq(0).css("color","red");
+        });
+    </script>
+</head>
+<body>
+    <p></p>
+    <input type="text" name="input_background" />
+    <p class="bold_paragraph">Выборка по имени класса</p>
+    <p id="red_paragraph">Выборка по идентификатору</p>
+</body>
+</html>
